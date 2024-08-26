@@ -66,6 +66,7 @@ To interact with Trello's resources or manage user data, your application requir
 **Response Status Code:** `200 OK`
 ### API Request and Response
 ### JavaScript Tests
+- Verifies if the response status is 200 OK.
 ## 2. Create Board
 
 **HTTP Method for Request:** `POST`
@@ -77,6 +78,10 @@ To interact with Trello's resources or manage user data, your application requir
 **Response Status Code:** `200 OK`
 ### API Request and Response
 ### JavaScript Tests
+- Verifies if the response status is 200 OK.
+- Verifies if the board was created with the correct name.
+- Verifies if the board is private.
+- Verifies if the calendar view is disabled.
 ## 3. Get Board
 
 **HTTP Method for Request:** `GET`
@@ -88,6 +93,7 @@ To interact with Trello's resources or manage user data, your application requir
 **Response Status Code:** `200 OK`
 ### API Request and Response
 ### JavaScript Tests
+- Verifies if the response status is 200 OK.
 ## 4. Create TODO List
 
 **HTTP Method for Request:** `POST`
@@ -99,6 +105,8 @@ To interact with Trello's resources or manage user data, your application requir
 **Response Status Code:** `200 OK`
 ### API Request and Response
 ### JavaScript Tests
+- Verifies if the response status is 200 OK.
+- Verifies if the TODO list was created and is active.
 ## 5. Create DONE List
 
 **HTTP Method for Request:** `POST`
@@ -110,6 +118,7 @@ To interact with Trello's resources or manage user data, your application requir
 **Response Status Code:** `200 OK`
 ### API Request and Response
 ### JavaScript Tests
+- Verifies if the response status is 200 OK.
 ## 6. Create Card
 
 **HTTP Method for Request:** `POST`
@@ -121,7 +130,9 @@ To interact with Trello's resources or manage user data, your application requir
 **Response Status Code:** `200 OK`
 ### API Request and Response
 ### JavaScript Tests
-## 7. Create Card
+- Verifies if the response status is 200 OK.
+- Verifies if the card was created correctly and is associated with the TODO list.
+## 7. Move Card To DONE List
 
 **HTTP Method for Request:** `PUT`
 
@@ -132,6 +143,7 @@ To interact with Trello's resources or manage user data, your application requir
 **Response Status Code:** `200 OK`
 ### API Request and Response
 ### JavaScript Tests
+- Verifies if the response status is 200 OK and if the card was successfully moved.
 ## 8. Delete Board
 
 **HTTP Method for Request:** `DELETE`
@@ -143,6 +155,7 @@ To interact with Trello's resources or manage user data, your application requir
 **Response Status Code:** `200 OK`
 ### API Request and Response
 ### JavaScript Tests
+- Verifies if the response status is 200 OK.
 ## 9. Get Deleted Board
 
 **HTTP Method for Request:** `GET`
@@ -154,3 +167,4 @@ To interact with Trello's resources or manage user data, your application requir
 **Response Status Code:** `404 Not Found`
 ### API Request and Response
 ### JavaScript Tests
+- Verifies if the response status is 404 Not Found.
