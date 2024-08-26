@@ -168,3 +168,30 @@ To interact with Trello's resources or manage user data, your application requir
 ### API Request and Response
 ### JavaScript Tests
 - Verifies if the response status is 404 Not Found.
+
+## Explanation of Tests
+## 1. Status Code Validation
+For each request, there is a test to verify that the status code of the response matches the expected value (e.g., 200 OK for successful requests, 404 Not Found for attempting to retrieve a deleted board).
+
+## 2. Response Body Content Validation
+Tests are included to verify that specific fields in the response match expected values. For example, after creating a board, the test ensures the board's name and other properties are correct.
+
+## 3. Dynamic Variable Validation
+Generated IDs, such as those for boards, lists, and cards, are stored as environment variables and used in subsequent requests to ensure data consistency.
+
+## 4. Sequence Validation
+- The requests are structured in a sequence to simulate real-world usage of the Trello API. For example:
+  - First, a board is created.
+  - Then, lists are added to the board.
+  - Cards are created within those lists.
+  - Cards are moved between lists to simulate task progress.
+  - Finally, the board is deleted, and a test confirms that it has been successfully removed.
+
+## 5. Error Handling and Negative Testing
+Tests are included to check the API's error handling. For example, the GetDeletedBoard request checks that attempting to access a deleted board returns a 404 Not Found status.
+
+## 6. Response Time Validation
+To ensure the API's performance, response times are tested to ensure they fall within acceptable limits.
+
+## 7. Cleanup and Environment Management
+Environment variables are managed throughout the testing process to ensure they are correctly set and cleared as needed. This helps maintain a clean state for subsequent tests.
