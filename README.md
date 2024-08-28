@@ -54,7 +54,7 @@ To interact with Trello's resources or manage user data, your application requir
   - doneListId: ID of the created DONE list.
   - cardId: ID of the created card.
 
-## Tests perfromed
+## Tests performed
 ## 1. Get All Boards
 
 **HTTP Method for Request:** `GET`
