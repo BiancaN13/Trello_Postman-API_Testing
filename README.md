@@ -65,8 +65,10 @@ To interact with Trello's resources or manage user data, your application requir
 
 **Response Status Code:** `200 OK`
 ### API Request and Response
+![getallboards](![image](https://github.com/user-attachments/assets/19c2ddea-ce4f-4ea7-a4cb-3506b85ae666)
 ### JavaScript Tests
 - Verifies if the response status is 200 OK.
+![getallboardstest](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/GetAllBoardsTests.PNG)
 ## 2. Create Board
 
 **HTTP Method for Request:** `POST`
@@ -77,11 +79,14 @@ To interact with Trello's resources or manage user data, your application requir
 
 **Response Status Code:** `200 OK`
 ### API Request and Response
+![createboard](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/CreateBoard.PNG)
 ### JavaScript Tests
 - Verifies if the response status is 200 OK.
 - Verifies if the board was created with the correct name.
 - Verifies if the board is private.
 - Verifies if the calendar view is disabled.
+![createboardtest](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/CreateBoardTest.PNG)
+![createboardtest2](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/CreateBoardTest2.PNG)
 ## 3. Get Board
 
 **HTTP Method for Request:** `GET`
@@ -92,8 +97,10 @@ To interact with Trello's resources or manage user data, your application requir
 
 **Response Status Code:** `200 OK`
 ### API Request and Response
+![getboard](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/getboard.PNG)
 ### JavaScript Tests
 - Verifies if the response status is 200 OK.
+![getboardtest](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/getboardtest.PNG)
 ## 4. Create TODO List
 
 **HTTP Method for Request:** `POST`
@@ -104,9 +111,11 @@ To interact with Trello's resources or manage user data, your application requir
 
 **Response Status Code:** `200 OK`
 ### API Request and Response
+![createtodolist](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/createtodolist.PNG)
 ### JavaScript Tests
 - Verifies if the response status is 200 OK.
 - Verifies if the TODO list was created and is active.
+![createtodolisttest](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/createtodolisttest.PNG)
 ## 5. Create DONE List
 
 **HTTP Method for Request:** `POST`
@@ -117,8 +126,11 @@ To interact with Trello's resources or manage user data, your application requir
 
 **Response Status Code:** `200 OK`
 ### API Request and Response
+![createdonelist](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/createdonelist.PNG)
 ### JavaScript Tests
 - Verifies if the response status is 200 OK.
+- Ensures that \ the newly created list is correctly named "DONE", is active (not closed), and is associated with the correct board.
+![createdonelisttest](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/createdonelisttest.PNG)
 ## 6. Create Card
 
 **HTTP Method for Request:** `POST`
@@ -129,9 +141,11 @@ To interact with Trello's resources or manage user data, your application requir
 
 **Response Status Code:** `200 OK`
 ### API Request and Response
+![createcard](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/createcard.PNG)
 ### JavaScript Tests
 - Verifies if the response status is 200 OK.
 - Verifies if the card was created correctly and is associated with the TODO list.
+![createcardtest](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/createcardtest.PNG)
 ## 7. Move Card To DONE List
 
 **HTTP Method for Request:** `PUT`
@@ -142,8 +156,10 @@ To interact with Trello's resources or manage user data, your application requir
 
 **Response Status Code:** `200 OK`
 ### API Request and Response
+![movecard](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/movecard.PNG)
 ### JavaScript Tests
 - Verifies if the response status is 200 OK and if the card was successfully moved.
+![movecardtest](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/movecardtest.PNG)
 ## 8. Delete Board
 
 **HTTP Method for Request:** `DELETE`
@@ -154,8 +170,10 @@ To interact with Trello's resources or manage user data, your application requir
 
 **Response Status Code:** `200 OK`
 ### API Request and Response
+![deleteboard](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/deleteboard.PNG)
 ### JavaScript Tests
 - Verifies if the response status is 200 OK.
+![deleteboardtest](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/deleteboardtest.PNG)
 ## 9. Get Deleted Board
 
 **HTTP Method for Request:** `GET`
@@ -166,8 +184,10 @@ To interact with Trello's resources or manage user data, your application requir
 
 **Response Status Code:** `404 Not Found`
 ### API Request and Response
+![getdeletedboard](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/getdeletedboard.PNG)
 ### JavaScript Tests
 - Verifies if the response status is 404 Not Found.
+![getdeletedboardtest](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/getdeletedboardtest.PNG)
 
 ## Explanation of Tests
 ## 1. Status Code Validation
