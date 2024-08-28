@@ -129,7 +129,7 @@ To interact with Trello's resources or manage user data, your application requir
 ![createdonelist](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/createdonelist.PNG)
 ### JavaScript Tests
 - Verifies if the response status is 200 OK.
-- Ensures that \ the newly created list is correctly named "DONE", is active (not closed), and is associated with the correct board.
+- Ensures that the newly created list is correctly named "DONE", is active (not closed), and is associated with the correct board.
 ![createdonelisttest](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/createdonelisttest.PNG)
 ## 6. Create Card
 
