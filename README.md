@@ -65,7 +65,7 @@ To interact with Trello's resources or manage user data, your application requir
 
 **Response Status Code:** `200 OK`
 ### API Request and Response
-![getallboards](![image](https://github.com/user-attachments/assets/19c2ddea-ce4f-4ea7-a4cb-3506b85ae666)
+![getallboards](https://github.com/user-attachments/assets/19c2ddea-ce4f-4ea7-a4cb-3506b85ae666)
 ### JavaScript Tests
 - Verifies if the response status is 200 OK.
 ![getallboardstest](https://github.com/BiancaN13/Trello_Postman-API_Testing/blob/main/GetAllBoardsTests.PNG)
